@@ -1,0 +1,763 @@
+@import "main.css";
+/********* begin header style *********/
+    /* begin header-contnet */
+    @media screen and (max-width:1400px) {
+        h1, h1 span {
+            font-size: 51px;
+        }
+        .header-contnet .cycle-icon {
+            width: 76px;
+            height: 76px;
+        }
+        .header-contnet .cycle-icon::after {
+            width: 100px;
+            height: 100px;
+        }
+        .header-contnet .static-icon {
+            width: 76px;
+            height: 76px;
+        }
+        .form-quote h2 {
+            font-size: 32px !important;
+        }
+    }
+    @media screen and (max-width:1200px) {
+        h1, h1 span {
+            font-size: 44px;
+        }
+        .header-contnet .list-icon span {
+            font-size: 12px;
+        }
+        .form-quote h2 {
+            font-size: 28px !important;
+        }
+        .request-a-quote .form-check label {
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width:992px) {
+        .header-contnet {
+            padding-top: 40px;
+        }
+        .form-quote {
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .header-contnet .list-icon span {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:767px) {
+        .con-left-side {
+            width: 80% !important;
+        }
+        .form-quote {
+            width: 85%;
+        }
+        .form-quote .social-media i {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    @media screen and (max-width:575px) {
+        h1, h1 span {
+            font-size: 35px;
+        }
+        .con-left-side {
+            width: 100% !important;
+        }
+        .header-contnet .list-icon span {
+            font-size: 12px !important;
+        }
+        .header-contnet .cycle-icon {
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .form-quote {
+            width: 95%;
+            margin-top: 30px;
+        }
+        .header-contnet .static-icon {
+            width: 50px;
+            height: 50px;
+            left: 0;
+            transform: translate(0%, -50%);
+            -webkit-transform: translate(0%, -50%);
+            -moz-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+            -o-transform: translate(0%, -50%);
+        }
+        .form-quote h2 {
+            font-size: 24px !important;
+        }
+        .form-quote .social-media {
+            flex-direction: row;
+            top: unset !important;
+            left: 50%;
+            bottom: -5px;
+            transform: translate(-50%, 100%);
+            -webkit-transform: translate(-50%, 100%);
+            -moz-transform: translate(-50%, 100%);
+            -ms-transform: translate(-50%, 100%);
+            -o-transform: translate(-50%, 100%);
+        }
+    }
+    @media screen and (max-width:410px) {
+        .form-quote h2 {
+            font-size: 20px !important;
+        }
+    }
+    /* end header-contnet */
+/******** end nav-bar style ********/
+
+
+
+
+
+
+/******** begin about ********/
+@media screen and (max-width:992px) {
+    .about .customize-text {
+        padding-top: 60px;
+    }
+}
+@media screen and (max-width:767px) {
+    .about .list-icon {
+        margin-top: 24px !important;
+    }
+    .about .customize-text .list-icon img{
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+    }
+}
+@media screen and (max-width:576px) {
+    .about .customize-text p {
+        font-size: 14px;
+    }
+    .about .list-icon{
+        margin-left: 20px !important;
+    }
+    .about .list-icon span {
+        font-size: 14px;
+    }
+}
+/******** end about ********/
+
+
+
+
+
+/******** begin services ********/
+@media screen and (max-width:1400px) {
+    .services .server{
+        padding: 30px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .services .server-img{
+        width: 90px;
+        height: 90px;
+        padding: 18px;
+    }
+    .services .server p{
+        font-size: 14px;
+    }
+    .services .got-questions .title{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:992px) {
+    .services .got-questions .title{
+        font-size: 12px;
+    }
+    .services .got-questions .btn-main{
+        padding: 16px 34px;
+    }
+    
+    .services .got-questions .btn-main span{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:767px) {
+    .services .server{
+        margin-top: 15px !important;
+    }
+    .services .server.one{
+        margin-top: 0 !important;
+    }
+}
+/******** end services ********/
+
+
+
+
+
+
+/******** start it-works ********/
+@media screen and (max-width:1400px) {
+    .it-works .staps-img{
+        width: 110px;
+        height: 110px;
+    }
+    .it-works .staps-img::after {
+        width: 130px;
+        height: 130px;
+    }
+    .it-works .staps-img::before {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .it-works .staps-text h3 {
+        line-height: 30px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .it-works .staps-text{
+        width: 78%;
+    }
+    .it-works .staps-text p {
+        font-size: 14px;
+    }
+    .it-works .staps-img{
+        margin-right: 35px;
+    }
+   
+  
+}
+@media screen and (max-width:992px) {
+    .it-works .staps{
+        margin-bottom: 40px;
+    }
+    .hlaf-circl.one{
+        width: 260px;
+        height: 260px;
+    }
+    .hlaf-circl.one::after{
+        border-width: 30px;
+    }
+    .hlaf-circl.two{
+        width: 220px;
+        height: 220px;
+    }
+    .hlaf-circl.two::after{
+        border-width: 25px;
+    }
+}
+@media screen and (max-width:576px) {
+    .it-works .staps-img{
+        width: 90px;
+        height: 90px;
+        margin-left: 5px;
+    }
+    .it-works .staps-img::after{
+        width: 100px;
+        height: 100px;
+    }
+    .it-works .staps-img::before{
+        width: 24px;
+        height: 24px;
+    }
+    .it-works .staps-img::before{
+        font-size: 10px;
+    }
+    .it-works .staps-text{
+        font-size: 18px;
+    }
+    .it-works .staps-text h3 {
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .it-works .staps-text p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .hlaf-circl.one{
+        width: 220px;
+        height: 220px;
+    }
+    .hlaf-circl::after{
+        border-color:#12a5743a;
+    }
+    .hlaf-circl.two{
+        display: none;
+    }
+}
+@media screen and (max-width: 410px){
+    .it-works .staps {
+        padding: 0px 10px;
+    }
+    .it-works .staps-img{
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+        margin-right: 23px;
+    }
+    .it-works .staps-img::after {
+        width: 70px;
+        height: 70px;
+    }
+    .it-works .staps-img img {
+        height: 36px;
+    }
+    .it-works .staps{
+        align-items: unset !important;
+    }
+    .it-works .staps-text{
+        width: 100%;
+    }
+    .lines{
+        right: 5%;
+    }
+    .it-works .staps-text h3 {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .it-works .staps-text p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+/******** end it-works ********/
+
+
+
+
+
+
+/******** begin team ********/
+@media screen and (max-width:1200px) {
+    .team-card{
+        padding: 0 0 40px 30px;
+    }
+    .team-card > span{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .team-card h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .team-card .fa-share-nodes span{
+        font-size: 14px;
+    }
+    .follow .fill{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:992px) {
+    .team-card{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:576px) {
+    .team-card{
+        align-items: center  !important;
+        padding-left: 0px;
+    }
+    .team-card img{
+        width: 50%;
+    }
+}
+/******** end team ********/
+
+
+
+
+
+
+/******** begin social-media-section ********/
+@media screen and (max-width:1200px) {
+    .social-media-section a{
+        margin-right: 25px;
+    }
+    .social-media-section i{
+        width: 130px;
+        height: 130px;
+        font-size: 48px;
+        
+    }
+}
+@media screen and (max-width:992px) {
+    .social-media-section a{
+        font-size: 12px;
+    }
+    .social-media-section i{
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+    }
+    .social-media-section .fa-youtube , .social-media-section .fa-instagram{
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width:767px) {
+    .social-media-section a{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width:576px) {
+    .social-media-section a{
+        color: transparent;
+        font-size: 0px;
+        margin-right: 15px;
+        animation: none;
+        -webkit-animation: none;
+}
+    .social-media-section i{
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .social-media-section .fa-youtube , .social-media-section .fa-instagram{
+        margin-top: 0px;
+        
+}
+}
+/******** end social-media-section ********/
+
+
+
+
+/******** begin pricing ********/
+@media screen and (max-width:1200px) {
+    
+    .pricing .upper-div{
+        padding: 80px 40px 50px;
+    }
+    .pricing .list-icon span{
+        font-size: 12px;
+    }
+    .pricing .lower-div{
+        padding-inline: 40px;
+    }
+}
+@media screen and (max-width:992px) {
+    .pricing .heading{
+        margin-bottom: 40px;
+    }
+    .pricing .btn-main.light span{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:410px) {
+    .pricing .heading{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:315px) {
+    .pricing .upper-div h3{
+        font-size: 30px;
+    }
+    .pricing .upper-div h3 span{
+        font-size: 14px;
+    }
+    .pricing .btn-main{
+        padding: 14px 20px;
+    }
+}
+
+/******** end pricing ********/
+
+
+
+
+
+
+/******** begin newsletter ********/
+@media screen and (max-width:1200px) {
+    .newsletter h3{
+        font-size: 19px;
+    }
+    .newsletter h3 span{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:992px) {
+    .newsletter .paper-plane{
+        width: 60%;
+    }
+    .newsletter-text{
+        width: 100%;
+    }
+    .newsletter .btn-main{
+        font-size: 12px;
+    }
+    .newsletter .customize-img{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:767px) {
+    .newsletter{
+        padding-top: 20px;
+    }
+    .newsletter .paper-plane{
+        width: 15%;
+        margin-left: unset !important;
+        margin-right: auto;
+    }
+    .newsletter h2{
+        font-size: 36px;
+        margin: 16px 0 10px;
+    }
+    .newsletter p{
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width:576px) {
+    .newsletter{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width:410px) {
+    .newsletter .btn-main{
+        padding:14px 30px;
+    }
+}
+/******** end newsletter ********/
+
+
+
+/******** begin faq’s ********/
+@media screen and (max-width:1400px) {
+    .faq’s .count-style {
+        width: 216px;
+        height: 216px;
+    }
+    .faq’s .count-style span{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .faq’s .accordion-item .sign{
+        font-size: 17px;
+    }
+    .faq’s .accordion-item .title {
+        font-size: 16px;
+        padding: 14px 50px;
+    }
+    .faq’s .accordion-item-content{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .faq’s .count-style {
+        width: 180px;
+        height: 180px;
+    }
+    .faq’s .count-style h4{
+        font-size: 40px;
+    }
+    .faq’s .count-style span{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:576px) {
+    .faq’s .accordion-item .sign{
+        font-size: 15px;
+    }
+    .faq’s .accordion-item .title {
+        font-size: 14px;
+        padding-right: 0;
+    }
+    .faq’s .accordion-item-content{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width:410px) {
+    .faq’s .count-style {
+        width: 150px;
+        height: 150px;
+    }
+    .faq’s .count-style span{
+        font-size: 8px;
+    }
+    .faq’s .count-style.three{
+        margin-left: 0;
+    }
+}
+
+
+/******** end faq’s ********/
+
+
+
+
+
+/******** begin feedback-clinets ********/
+@media screen and (max-width:1400px) {
+    .feedback-clinets .client {
+        padding-left: 50px;
+        padding-bottom: 40px;
+    }
+    .feedback-clinets .client.two{
+        padding-left: 109px;
+    }
+    .client h4{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199){
+    .feedback-clinets .client {
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+    .feedback-clinets .client.two{
+        padding-left: 66px;
+        padding-right: 18px;
+    }
+    .feedback-clinets .owl-carousel-two .client i{
+        width: 80px;
+        height: 80px;
+    }
+    .feedback-clinets .owl-carousel-two .client i img {
+        width: 55px;
+    }
+}
+@media screen and (max-width:767px) {
+    .feedback-clinets .client {
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+    .feedback-clinets .client.two{
+        padding-left: 66px;
+        padding-right: 18px;
+    }
+    .feedback-clinets .owl-carousel-two .client i{
+        width: 80px;
+        height: 80px;
+    }
+    .feedback-clinets .owl-carousel-two .client i img {
+        width: 55px;
+    }
+}
+@media screen and (max-width:576px) {
+    .client p{
+        font-size: 14px;
+    }
+    .feedback-clinets .owl-carousel-two .client i{
+        width: 70px;
+        height: 70px;
+    }
+    .feedback-clinets .owl-carousel-two .client i img {
+        width: 50px;
+    }
+    .client h3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:410px) {
+    .feedback-clinets .client {
+        clip-path: none;
+        padding: 10px;
+    }
+    .feedback-clinets .client.two {
+        clip-path: none;
+        padding: 10px;
+    }
+    .feedback-clinets .owl-carousel-two .client i{
+        width: 60px;
+        height: 60px;
+    }
+    .feedback-clinets .owl-carousel-two .client i img {
+        width: 42px;
+    }
+}
+/******** end feedback-clinets ********/
+
+
+
+
+
+
+
+/******** begin footer ********/
+@media screen and (max-width:1200px) {
+    .footer-top p{
+        font-size: 14px;
+    }
+    .footer-top span{
+        font-size: 14px;
+    }
+    .footer-top a{
+        font-size: 14px;
+    }
+    .footer-bottom{
+        margin-top: 32px;
+        padding: 58px;
+    }
+    .footer-bottom h3{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:992px) {
+    .footer-top img{
+        width: 160px;
+    }
+    .footer-bottom .btn-main{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:767px) {
+    .footer-top h2{
+        margin-bottom: 10px;
+    }
+    .footer-bottom{
+        padding: 30px;
+    }
+    .footer-bottom h3{
+        font-size: 30px;
+    }
+    .footer-end h4{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:576px) {
+    .footer-top img{
+        width: 140px;
+    }
+    .footer-top p{
+        line-height: 26px;
+    }
+    .footer-bottom p{
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+@media screen and (max-width:410px) {
+    .footer-bottom{
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+    .footer-bottom h3{
+        font-size: 22px;
+    }
+}
+/******** end footer ********/
+
+
+
+/* xxl */
+@media screen and (max-width:1400px) {}
+
+/* xl */
+@media screen and (max-width:1200px) {}
+
+/* lg */
+@media screen and (max-width:992px) {}
+
+/* md */
+@media screen and (max-width:767px) {}
+
+/* sm */
+@media screen and (max-width:576px) {}
+
+/* < sm */
+@media screen and (max-width:410px) {}

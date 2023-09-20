@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapik</title>
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- font awesome 6.4.0 -->
+    <link rel="stylesheet" href="vendor/fontawesome/font_awesome.css">
+
+    <!-- bootstrap 5.3.0 -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+
+    <!-- owlcarousel2 -->
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/media/index.css">
+</head>
+
+<body>
+    <div class="cont-loader">
+        <div id="loader" class="center"></div>
+    </div>
+    
+    <!--------- begin header --------->
+    <header id="header" class="header">
+        <!-- begin navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container flex-nowrap">
+                <a class="navbar-brand" href="index.html#header">
+                    <img src="assets/img/logo-b.png" alt="logo" class="img-fluid">
+                </a>
+                <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rapik</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-start px-3">
+                        <ul id="navbar-nav" class="navbar-nav nav-pills w-75 mb-2 mb-lg-0 justify-content-center align-items-lg-center ">
+                            <li class="nav-item">
+                                <a class="nav-link px-2" aria-current="page" href="#about">About</a>
+                            </li>
+                            <div class="dropdown">
+                                <a href="#services" class="dropdown-toggle border-0 text-decoration-none p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item overview-btn p-2">Overview</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item p-2">Web Hosting</a></li>
+                                    <li><a class="dropdown-item p-2">Innovative Idea</a></li>
+                                    <li><a class="dropdown-item p-2">Dedicated Server</a></li>
+                                </ul>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2" href="#faq’s">Faq’s</a>
+                            </li>
+                        </ul>
+                        <a class="phone text-decoration-none ps-2" href="tel:+12344502086">
+                            <span class="my-4 my-xl-2">+1234 450 2086</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- begin header-contnet -->
+        <div class="header-contnet" id="header-contnet">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-lg-7 d-flex align-items-center">
+                        <div>
+                            <h1>Great Ways to Show Your <span class="text-main-color">Best Services</span></h1>
+                            <div class="con-left-side row w-75">
+                                <div class="col-sm-10">
+                                    <div class="list-icon">
+                                        <div class="mb-3">
+                                            <img src="assets/img/check.png" alt="check" class="img-fluid">
+                                            <span>State of the art facility</span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <img src="assets/img/check.png" alt="check" class="img-fluid">
+                                            <span>Superior world class services</span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <img src="assets/img/check.png" alt="check" class="img-fluid">
+                                            <span>Certified and expert consultants.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="video cycle-icon" onclick="open_youtube()">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="form-quote col-lg-5 bg-white shadow position-relative">
+                        <div class="static-icon">
+                            <img src="assets/img/paper-plane.png" alt="paper plane">
+                        </div>
+                        <h2 class="text-black">Request a Quote</h2>
+                        <span style="color: rgb(133, 133, 133);">Marketing Business campaign</span>
+                        <form action="" class="request-a-quote w-100 mt-4">
+                            <div class="input-text">
+                                <input type="text" class="form-control" placeholder="Complete Name"
+                                    aria-label="complete-name" name="comName" required>
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="input-text">
+                                <input type="text" class="form-control" placeholder="Email Address"
+                                    aria-label="email-address" type="email" name="email" required>
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="input-text">
+                                <input type="text" class="form-control" name="NumPhone" placeholder="Phone No"
+                                    aria-label="phone-no" required>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <h3 class="fs-6 mt-4">Preferred Consult Method:</h3>
+                            <div class="d-flex justify-content-start mt-1">
+                                <div class="form-check d-flex align-items-center justify-content-start">
+                                    <input type="radio" id="virtualIn-office" name="virtualIn-office" value="Virtual"
+                                        required>
+                                    <label class="form-check-label ms-2" for="virtualIn-office">
+                                        VirtualIn-Office
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center">
+                                    <input type="radio" id="virtualIn-office" name="virtualIn-office" value="Virtual"
+                                        required>
+                                    <label class="form-check-label ms-2" for="virtualIn-office">
+                                        VirtualIn-Office
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-center mt-1">
+                                <button class="btn btn-main rounded-pill mt-4" type="submit">Start Free Trial</button>
+                            </div>
+
+                        </form>
+                        <div class="social-media">
+                            <i class="fa-brands fa-facebook-f rotate-icon fill"></i>
+                            <i class="fa-brands fa-twitter rotate-icon fill"></i>
+                            <i class="fa-brands fa-linkedin-in rotate-icon fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header-contnet -->
+    </header>
+    <!--------- end header --------->
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-nav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+ 
+
+
+    <!--------- begin about --------->
+    <section class="about py-section" id="about">
+        <div class="container">
+            <div class="heading text-center">
+                <span>welcome to rapik landing page</span>
+                <h2 class="mt-2">Build and Customize Your Perfect Landing Page</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="customize-img">
+                        <img src="assets/img/customize.png" alt="customize image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="customize-text">
+                        <p>Enim ad minim veniam, quis nostrud exercitat ullrem ipsum dolor sit amet, consece adipising
+                            elit, o eiusmod tempor incididunt ut labore bit of how ther chancer flat bogeo viele marioa.
+                        </p>
+                        <div class="list-icon">
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Get high conversion rates</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Engage more users</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>CBring it to life again with us</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Virtual Private Server (VPS)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- end about --------->
+
+
+
+
+
+
+    <!--------- begin services --------->
+    <section class="services no-pt-section" id="services">
+        <div class="container">
+            <div class="heading">
+                <span>Key Featured For Landing Page</span>
+                <h2 class="mt-2">Create a Landing Page In a Minute Not Weeks</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="server one fill">
+                        <div class="server-img mb-4">
+                            <img src="assets/img/server-1.png" alt="server icon" class="img-fluid">
+                        </div>
+                        <h3 class="title mb-3">Web Hosting</h3>
+                        <p>Enim ad minim veniam, quis rem ipsum dolor sit amet, ao eiusmod tempor incididun ther chancer
+                            sudolor sit amet, ao</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="server two fill">
+                        <div class="server-img mb-4">
+                            <img src="assets/img/server-2.png" alt="server icon" class="img-fluid">
+                        </div>
+                        <h3 class="title mb-3">Innovative Idea</h3>
+                        <p>Enim ad minim veniam, quis rem ipsum dolor sit amet, ao eiusmod tempor incididun ther chancer
+                            sudolor sit amet, ao</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="server three fill">
+                        <div class="server-img mb-4">
+                            <img src="assets/img/server-3.png" alt="server icon" class="img-fluid">
+                        </div>
+                        <h3 class="title mb-3">Dedicated Server</h3>
+                        <p>Enim ad minim veniam, quis rem ipsum dolor sit amet, ao eiusmod tempor incididun ther chancer
+                            sudolor sit amet, ao</p>
+                    </div>
+                </div>
+            </div>
+            <div class="got-questions mt-5 d-flex justify-content-around align-items-center flex-column flex-md-row">
+                <h4 class="title">Got questions? We’ve got answers. send us email to</h3>
+                    <button class="btn btn-main light rounded-pill"
+                        onclick="location.href='mailto:username@domain.com'">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Username@Domain.Com</span>
+                    </button>
+            </div>
+        </div>
+    </section>
+    <!--------- end services --------->
+
+
+
+
+
+
+    <!--------- begin it-works --------->
+    <section class="it-works py-section">
+        <div class="container">
+            <div class="heading text-center mb-5">
+                <span>HOW IT WORKS?</span>
+                <h2 class="mt-2">Starting a Consulting Business With No Experience</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="staps one d-flex align-items-center justify-content-start">
+                        <div class="staps-img cycle-icon">
+                            <img src="assets/img/shaps-1.png" alt="staps one">
+                        </div>
+                        <div class="staps-text">
+                            <h3 class="title">Analyze your market needs and pain points.</h3>
+                            <p>Enim ad minim veniam, quis rem ipsum nim veniam dolor sit amet ao.</p>
+                        </div>
+                    </div>
+                    <div class="staps two d-flex align-items-center justify-content-start">
+                        <div class="staps-img cycle-icon">
+                            <img src="assets/img/shaps-2.png" alt="staps one">
+                        </div>
+                        <div class="staps-text">
+                            <h3 class="title">Develop your brand, and service offerings.</h3>
+                            <p>Enim ad minim veniam, quis rem ipsum nim veniam dolor sit amet ao.</p>
+                        </div>
+                    </div>
+                    <div class="staps three d-flex align-items-center justify-content-start">
+                        <div class="staps-img cycle-icon">
+                            <img src="assets/img/shaps-3.png" alt="staps one">
+                        </div>
+                        <div class="staps-text">
+                            <h3 class="title">Market your business to attract new clients.</h3>
+                            <p>Enim ad minim veniam, quis rem ipsum nim veniam dolor sit amet ao.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="customize-img">
+                        <img src="assets/img/customize-2.png" alt="customize image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-one">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                        <div class="owl-item text-center ">
+                            <div class="item">
+                                <img src="assets/img/sponsor-1.png" alt="sponsor one" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="item">
+                                <img src="assets/img/sponsor-2.png" alt="sponsor one">
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="item">
+                                <img src="assets/img/sponsor-3.png" alt="sponsor one">
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="item">
+                                <img src="assets/img/sponsor-4.png" alt="sponsor one">
+                            </div>
+                        </div>
+                        <div class="owl-item ">
+                            <div class="item">
+                                <img src="assets/img/sponsor-5.png" alt="sponsor one">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/lines.png" alt="lines" class="lines">
+        </div>
+        <div class="hlaf-circl one"></div>
+        <div class="hlaf-circl two"></div>
+    </section>
+    <!--------- end it-works --------->
+
+
+
+
+
+
+    <!--------- begin team --------->
+    <section class="team py-section" id="team">
+        <div class="container">
+            <div class="heading text-center mb-0 mb-lg-5">
+                <span>DEDICATED TO THE PEOPLE</span>
+                <h2 class="mt-2">Meet Our Expert Team</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card d-flex align-items-start flex-column">
+                        <img src="assets/img/team-1.jpg" alt="team one" class="img-fluid rounded-circle">
+                        <span>EXPERT CONSULTANT</span>
+                        <h3>Thomas Willimes</h3>
+                        <a class="phone text-decoration-none" href="tel:+12344502086">
+                            <span>+1234 450 2086</span>
+                        </a>
+                        <div class="follow d-flex align-items-center">
+                            <i class="fa-solid fa-share-nodes position-absolute top-50 translate-middle-y">
+                                <span>Follow</span>
+                            </i>
+                            <i class="fa-brands fa-facebook-f rotate-icon fill"></i>
+                            <i class="fa-brands fa-twitter rotate-icon fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card d-flex align-items-start flex-column">
+                        <img src="assets/img/team-2.jpg" alt="team one" class="img-fluid rounded-circle">
+                        <span>EXPERT CONSULTANT</span>
+                        <h3>Willimes Domson</h3>
+                        <a class="phone text-decoration-none" href="tel:+12344502086">
+                            <span>+1234 450 2086</span>
+                        </a>
+                        <div class="follow d-flex align-items-center">
+                            <i class="fa-solid fa-share-nodes position-absolute top-50 translate-middle-y">
+                                <span>Follow</span>
+                            </i>
+                            <i class="fa-brands fa-facebook-f rotate-icon fill"></i>
+                            <i class="fa-brands fa-twitter rotate-icon fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-card d-flex align-items-start flex-column">
+                        <img src="assets/img/team-3.jpg" alt="team one" class="img-fluid rounded-circle">
+                        <span>EXPERT CONSULTANT</span>
+                        <h3>Maikal Qlark</h3>
+                        <a class="phone text-decoration-none" href="tel:+12344502086">
+                            <span>+1234 450 2086</span>
+                        </a>
+                        <div class="follow d-flex align-items-center">
+                            <i class="fa-solid fa-share-nodes position-absolute top-50 translate-middle-y">
+                                <span>Follow</span>
+                            </i>
+                            <i class="fa-brands fa-facebook-f rotate-icon fill"></i>
+                            <i class="fa-brands fa-twitter rotate-icon fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- end team --------->
+
+
+
+
+
+
+
+    <!--------- begin social-media-section --------->
+    <section class="social-media-section no-pt-section">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center flex-row">
+                <a class='text-decoration-none'>
+                    <i class="fa-brands fa-linkedin-in mb-3"></i>
+                    Linkedin
+                </a>
+                <a class='text-decoration-none animation-top'>
+                    <i class="fa-brands fa-youtube mb-3"></i>
+                    Youtube
+                </a>
+                <a class='text-decoration-none'>
+                    <i class="fa-brands fa-facebook-f mb-3"></i>
+                    Facebook
+                </a>
+                <a class='text-decoration-none animation-top'>
+                    <i class="fa-brands fa-instagram mb-3"></i>
+                    Instagram
+                </a>
+                <a class='text-decoration-none'>
+                    <i class="fa-brands fa-twitch mb-3"></i>
+                    Twitch
+                </a>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!--------- end social-media-section --------->
+
+
+
+
+
+    <!--------- begin pricing --------->
+    <section class="pricing py-section position-relative" id="pricing">
+        <div class="container">
+            <div class="heading text-center mb-lg-5">
+                <span>PRICING PLANS</span>
+                <h2 class="mt-2">Pricing Plans Without Hidden Charges</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="upper-div">
+                        <span>Basic Plan</span>
+                        <h3>$40 <span>/ month</span></h3>
+                    </div>
+                    <div class="lower-div">
+                        <i>
+                            <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m376.437 232.804v-130.342h30.125v-27.213l-75.249-75.249-75.25 75.25v27.213h30.125v81.052c-9.792-1.811-19.88-2.766-30.188-2.766s-20.396.955-30.188 2.766v-33.059h30.125v-27.213l-75.249-75.25-75.25 75.25v27.213h30.125v82.347c-27.998 29.674-45.187 69.65-45.187 113.57-.001 91.327 74.298 165.627 165.624 165.627s165.625-74.3 165.625-165.625c0-43.92-17.19-83.897-45.188-113.571zm-75.161-160.341 30.037-30.037 30.036 30.036h-14.912v135.228c-9.461-6.19-19.586-11.444-30.25-15.618v-119.609zm-120.588 17.957 30.037 30.037h-14.912v71.616c-10.664 4.174-20.789 9.428-30.25 15.618v-87.233h-14.912zm75.312 391.58c-74.784 0-135.625-60.841-135.625-135.625s60.841-135.625 135.625-135.625 135.625 60.841 135.625 135.625-60.842 135.625-135.625 135.625z">
+                                    </path>
+                                    <path
+                                        d="m263.88 331.376h-15.757c-7.547 0-13.687-6.14-13.687-13.687 0-7.546 6.14-13.686 13.687-13.686h15.396c7.557 0 13.704 6.147 13.704 13.704h30c0-21.546-15.677-39.488-36.222-43.049v-18.659h-30v18.595c-20.712 3.412-36.565 21.433-36.565 43.097 0 24.088 19.598 43.686 43.687 43.686h15.757c7.547 0 13.687 6.14 13.687 13.687s-6.14 13.687-13.687 13.687h-16.038c-7.267 0-13.178-5.912-13.178-13.178h-30c0 21.48 15.769 39.342 36.337 42.631v18.553h30v-18.595c20.712-3.411 36.565-21.433 36.565-43.097.001-24.091-19.597-43.689-43.686-43.689z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </i>
+                        <div class="list-icon">
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Free Consulting</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Monthly Report</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Amazing Features</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>24x7 Premium support</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-main light rounded-pill mt-4 get-subscribe">
+                            <span>Start Now</span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="upper-div two">
+                        <span>Business Plan</span>
+                        <h3>$70 <span>/ month</span></h3>
+                    </div>
+                    <div class="lower-div">
+                        <i>
+                            <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m376.437 232.804v-130.342h30.125v-27.213l-75.249-75.249-75.25 75.25v27.213h30.125v81.052c-9.792-1.811-19.88-2.766-30.188-2.766s-20.396.955-30.188 2.766v-33.059h30.125v-27.213l-75.249-75.25-75.25 75.25v27.213h30.125v82.347c-27.998 29.674-45.187 69.65-45.187 113.57-.001 91.327 74.298 165.627 165.624 165.627s165.625-74.3 165.625-165.625c0-43.92-17.19-83.897-45.188-113.571zm-75.161-160.341 30.037-30.037 30.036 30.036h-14.912v135.228c-9.461-6.19-19.586-11.444-30.25-15.618v-119.609zm-120.588 17.957 30.037 30.037h-14.912v71.616c-10.664 4.174-20.789 9.428-30.25 15.618v-87.233h-14.912zm75.312 391.58c-74.784 0-135.625-60.841-135.625-135.625s60.841-135.625 135.625-135.625 135.625 60.841 135.625 135.625-60.842 135.625-135.625 135.625z">
+                                    </path>
+                                    <path
+                                        d="m263.88 331.376h-15.757c-7.547 0-13.687-6.14-13.687-13.687 0-7.546 6.14-13.686 13.687-13.686h15.396c7.557 0 13.704 6.147 13.704 13.704h30c0-21.546-15.677-39.488-36.222-43.049v-18.659h-30v18.595c-20.712 3.412-36.565 21.433-36.565 43.097 0 24.088 19.598 43.686 43.687 43.686h15.757c7.547 0 13.687 6.14 13.687 13.687s-6.14 13.687-13.687 13.687h-16.038c-7.267 0-13.178-5.912-13.178-13.178h-30c0 21.48 15.769 39.342 36.337 42.631v18.553h30v-18.595c20.712-3.411 36.565-21.433 36.565-43.097.001-24.091-19.597-43.689-43.686-43.689z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </i>
+                        <div class="list-icon">
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Free Consulting</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Monthly Report</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Amazing Features</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>24x7 Premium support</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-main light rounded-pill mt-4 get-subscribe">
+                            <span>Start Now</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="upper-div three">
+                        <span>Premium Plan</span>
+                        <h3>$90 <span>/ month</span></h3>
+                    </div>
+                    <div class="lower-div">
+                        <i>
+                            <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m376.437 232.804v-130.342h30.125v-27.213l-75.249-75.249-75.25 75.25v27.213h30.125v81.052c-9.792-1.811-19.88-2.766-30.188-2.766s-20.396.955-30.188 2.766v-33.059h30.125v-27.213l-75.249-75.25-75.25 75.25v27.213h30.125v82.347c-27.998 29.674-45.187 69.65-45.187 113.57-.001 91.327 74.298 165.627 165.624 165.627s165.625-74.3 165.625-165.625c0-43.92-17.19-83.897-45.188-113.571zm-75.161-160.341 30.037-30.037 30.036 30.036h-14.912v135.228c-9.461-6.19-19.586-11.444-30.25-15.618v-119.609zm-120.588 17.957 30.037 30.037h-14.912v71.616c-10.664 4.174-20.789 9.428-30.25 15.618v-87.233h-14.912zm75.312 391.58c-74.784 0-135.625-60.841-135.625-135.625s60.841-135.625 135.625-135.625 135.625 60.841 135.625 135.625-60.842 135.625-135.625 135.625z">
+                                    </path>
+                                    <path
+                                        d="m263.88 331.376h-15.757c-7.547 0-13.687-6.14-13.687-13.687 0-7.546 6.14-13.686 13.687-13.686h15.396c7.557 0 13.704 6.147 13.704 13.704h30c0-21.546-15.677-39.488-36.222-43.049v-18.659h-30v18.595c-20.712 3.412-36.565 21.433-36.565 43.097 0 24.088 19.598 43.686 43.687 43.686h15.757c7.547 0 13.687 6.14 13.687 13.687s-6.14 13.687-13.687 13.687h-16.038c-7.267 0-13.178-5.912-13.178-13.178h-30c0 21.48 15.769 39.342 36.337 42.631v18.553h30v-18.595c20.712-3.411 36.565-21.433 36.565-43.097.001-24.091-19.597-43.689-43.686-43.689z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </i>
+                        <div class="list-icon">
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Free Consulting</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Monthly Report</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>Amazing Features</span>
+                            </div>
+                            <div class="mb-2 mb-md-3">
+                                <img src="assets/img/check-colored.png" alt="check" class="img-fluid">
+                                <span>24x7 Premium support</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-main light rounded-pill mt-4 get-subscribe">
+                            <span>Start Now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-dialog d-none">
+            <div class="text-center position-relative">
+                <h2 class="py-3 bg-main-color m-0 text-white">Get in touch</h2>
+                <i class="fa-solid fa-xmark position-absolute top-0 end-0 p-3"></i>
+                
+                <form class="form bg-white p-3 pt-2">
+                    <div class="row">
+                        <div class="col-sm-6 p-2">
+                            <input type="text" id="fullname" placeholder="Full Name" class="form-control" required>
+                        </div>
+                        <div class="col-sm-6 p-2">
+                            <input type="text" id="email" placeholder="Email" class="form-control" required>
+                        </div>
+                        <div class="col-12 p-2 pb-0">
+                            <textarea type="" id="message" placeholder="Message" rows="3"
+                                class="form-control"></textarea>
+                        </div>
+                        <div class="text-center mt-1">
+                            <button class="btn btn-main rounded-pill mt-4" type="submit">Get in touch</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+    </section>
+    <!--------- end pricing --------->
+
+
+
+
+
+    <!--------- begin newsletter --------->
+    <section class="newsletter">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="row align-items-top ">
+                        <div class="col-md-3">
+                            <div class="paper-plane ms-auto">
+                                <img src="assets/img/paper-plane.png" alt="paper plane" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="col-md-9">
+                            <div class="newsletter-text">
+                                <h2>Newsletter!</h2>
+                                <h3>Subscribe and get The Special Offer <span class="bg-main-color">40% Discount</span>
+                                </h3>
+                                <p>let your users know a little more about your product or service.</p>
+                                <button class="btn btn-main rounded-pill get-subscribe" type="submit">Subscribe Email</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="customize-img">
+                        <img src="assets/img/customize-3.png" alt="customize image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- end newsletter --------->
+
+
+
+
+
+
+
+    <!--------- end faq’s --------->
+    <section class="faq’s py-section" id="faq’s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="heading">
+                        <span>FREQUENTLY ASKED QUESTIONS!</span>
+                        <h2 class="mt-2">Business Faq’s</h2>
+                    </div>
+                    <div class="accordion" id="accordion">
+                        <div class="accordion-item">
+                            <h3 class="title">
+                                <i class="fa-solid fa-plus sign"></i>
+                                What is a business consultant?
+                            </h3>
+                            <p class="accordion-item-content">Enim ad minim veniam, quis rem ipsum nim veniam dolor sit
+                                amet ao Enim ad minim veniam, quis rem ipsum anim veniam dolor sit amet ao.</p>
+                        </div>
+                        <div class="accordion-item active">
+                            <h3 class="title">
+                                <i class="fa-solid fa-minus sign"></i>
+                                I need a business consulting service?
+                            </h3>
+                            <p class="accordion-item-content d-block">Enim ad minim veniam, quis rem ipsum nim veniam
+                                dolor sit amet ao Enim ad minim veniam, quis rem ipsum anim veniam dolor sit amet ao.
+                            </p>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="title">
+                                <i class="fa-solid fa-plus sign"></i>
+                                Donate or fundraise
+                            </h3>
+                            <p class="accordion-item-content ">Enim ad minim veniam, quis rem ipsum nim veniam dolor sit
+                                amet ao Enim ad minim veniam, quis rem ipsum anim veniam dolor sit amet ao.</p>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="title">
+                                <i class="fa-solid fa-plus sign"></i>
+                                How do you price your services?
+                            </h3>
+                            <p class="accordion-item-content ">Enim ad minim veniam, quis rem ipsum nim veniam dolor sit
+                                amet ao Enim ad minim veniam, quis rem ipsum anim veniam dolor sit amet ao.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6 mt-3 mt-lg-0">
+                    <div class="row align-items-center ms-lg-5">
+                        <div class="col-6 d-flex align-items-center flex-column ">
+                            <div class="count-style d-flex flex-column justify-content-center align-items-center">
+                                <h4>10</h4>
+                                <span>completed projects</span>
+                            </div>
+                            <div class="count-style two d-flex flex-column justify-content-center align-items-center">
+                                <h4>40</h4>
+                                <span>Team members</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="count-style three d-flex flex-column justify-content-center align-items-center">
+                                <h4>12</h4>
+                                <span>Customer Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- end faq’s --------->
+
+
+
+
+
+
+
+
+    <!--------- begin feedback-clinets --------->
+    <section class="feedback-clinets no-pt-section">
+        <div class="container">
+            <div class="heading text-center mb-lg-5">
+                <span>1M SATISFIED CUSTOMERS</span>
+                <h2 class="mt-2">What Client’s Say</h2>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-two">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                        <div class="owl-item ">
+                            <div class="client">
+                                <p>"consultancy has been a very enjoyable and professional experience. The effort that
+                                    Conjunct Consulting puts in to ensure well trained consulting teams lead by well
+                                    trained and knowledgeable team leaders is very evident.”</p>
+                                <div class="d-flex align-items-center mt-4">
+                                    <div>
+                                        <i
+                                            class="bg-main-color fa-rotate-180 rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/img/quote.png" alt="quote">
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <h3>Levent Sucuoglu</h3>
+                                        <h4>Director of Information Technology </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item ">
+                            <div class="client two">
+                                <p>"consultancy has been a very enjoyable and professional experience. The effort that
+                                    Conjunct Consulting puts in to ensure well trained consulting teams lead by well
+                                    trained and knowledgeable team leaders is very evident.”</p>
+                                <div class="d-flex align-items-center mt-4">
+                                    <div>
+                                        <i
+                                            class="bg-main-color fa-rotate-180 rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/img/quote.png" alt="quote">
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <h3>Levent Sucuoglu</h3>
+                                        <h4>Director of Information Technology </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item ">
+                            <div class="client">
+                                <p>"consultancy has been a very enjoyable and professional experience. The effort that
+                                    Conjunct Consulting puts in to ensure well trained consulting teams lead by well
+                                    trained and knowledgeable team leaders is very evident.”</p>
+                                <div class="d-flex align-items-center mt-4">
+                                    <div>
+                                        <i
+                                            class="bg-main-color fa-rotate-180 rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/img/quote.png" alt="quote">
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <h3>Levent Sucuoglu</h3>
+                                        <h4>Director of Information Technology </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item ">
+                            <div class="client two">
+                                <p>"consultancy has been a very enjoyable and professional experience. The effort that
+                                    Conjunct Consulting puts in to ensure well trained consulting teams lead by well
+                                    trained and knowledgeable team leaders is very evident.”</p>
+                                <div class="d-flex align-items-center mt-4">
+                                    <div>
+                                        <i
+                                            class="bg-main-color fa-rotate-180 rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/img/quote.png" alt="quote">
+                                        </i>
+                                    </div>
+                                    <div>
+                                        <h3>Levent Sucuoglu</h3>
+                                        <h4>Director of Information Technology </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- end feedback-clinets --------->
+
+
+
+</div>
+
+
+    <!--------- begin footer --------->
+    <footer class="py-section footer pb-0 ">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-5">
+                        <img src="assets/img/logo-b.png" alt="logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-4 px-3">
+                        <h2>INFORMATION</h2>
+                        <p>Enim ad minim veniam, quis rem ipsor sit amet ao Enim ad minim venianim veniam dolor sit amet
+                            ao.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-4 mt-md-0">
+                        <h2>CONTACT US</h2>
+                        <div>
+                            <span class="d-flex align-items-center">
+                                Phone:
+                                <a href="tel:214-432-5905" class="ms-3">214-432-5905</a>
+                                </sapn>
+                        </div>
+                        <div class="mt-1 mt-md-3 ">
+                            <span class="d-flex align-items-center">
+                                Email:
+                                <a href="mailto:username@domain.com" class="ms-3"
+                                    style="margin-left: 25px !important;">username@domain.com</a>
+                                </sapn>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <h3>Start a Free Trial</h3>
+                <p>we help business innovate & growth company with 18 Years Perfessional Experience</p>
+                <button class="btn btn-main rounded-pill get-subscribe" type="submit">Start Free Trial</button>
+            </div>
+        </div>
+        <div class="footer-end text-center">
+            <h4>2023 © Rapik | Consulting Business HTML Landing Page</h4>
+        </div>
+    </footer>
+    <!--------- end footer --------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- begin subscribe-dialog -->
+    <div class="subscribe-dialog  d-none">
+        <div class="text-center position-relative">
+            <h2 class="py-3 bg-main-color m-0 text-white">Get in touch</h2>
+            <i class="fa-solid fa-xmark position-absolute top-0 end-0 p-3 text-white"></i>
+            <form class="form bg-white p-3 pt-2">
+                <div class="row">
+                    <div class="col-sm-6 p-2">
+                        <input type="text" id="fullname" placeholder="Full Name" class="form-control" required>
+                    </div>
+                    <div class="col-sm-6 p-2">
+                        <input type="text" id="email" placeholder="Email" class="form-control" required>
+                    </div>
+                    <div class="col-12 p-2 pb-0">
+                        <textarea type="" id="message" placeholder="Message" rows="3"
+                            class="form-control"></textarea>
+                    </div>
+                    <div class="text-center mt-1">
+                        <button class="btn btn-main rounded-pill mt-4 " type="submit">Get in touch</button>
+                    </div>
+
+                </div>
+        </div>
+        </form>
+    </div>
+    <!-- end subscribe-dialog -->
+
+    <!-- begin progress -->
+    <div id="progress"
+        class="progress position-fixed rounded-circle "
+        onclick="go_to_top()">
+        <i class="fa-solid fa-arrow-up rounded-circle d-flex justify-content-center align-items-center"></i>
+    </div>
+    <!-- end progress -->
+
+
+
+    <!-- youtube -->
+    <div class="youtube d-none" id="youtube" onclick="close_youtube()">
+        <iframe class="iframe-youtube" src="https://www.youtube.com/embed/1La4QzGeaaQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <i class="fa-solid fa-xmark" onclick="close_youtube()"></i>
+    </div>
+
+
+    <!-- bootstrap 5.3.0 -->
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

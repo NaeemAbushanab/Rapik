@@ -1,0 +1,6 @@
+@import "index.css";
+@media screen and (max-width:576px) {
+    .hlaf-circl{
+        display: none;
+    }
+}

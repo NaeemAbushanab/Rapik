@@ -1,0 +1,181 @@
+/******** begin general style ********/
+@media screen and (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .no-pt-section{
+        padding-bottom: 100px;
+    }
+    .py-section{
+        padding: 100px 0;
+    }
+    .heading span {
+        font-size: 14px;
+    }
+    .heading h2 {
+        font-size: 42px;
+    }
+    .customize-img::after{
+        width: 500px;
+        height: 500px;
+    }
+    .services{
+        scroll-margin-top: 100px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .heading h2 {
+        font-size: 38px;
+    }
+    .progress {
+        width: 50px;
+        height: 50px;
+    }
+
+    .progress i {
+        font-size: 1rem;
+    }
+    .customize-img::after{
+        width: 440px;
+        height: 440px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .no-pt-section{
+        padding-bottom: 80px;
+    }
+    .py-section{
+        padding: 80px 0;
+    }
+    .heading{
+        width: 100% !important;
+    }
+    .heading h2 {
+        font-size: 32px;
+    }
+    .services{
+        scroll-margin-top: 80px;
+    }
+}
+@media screen and (max-width:767px) {
+    .heading {
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    .no-pt-section{
+        padding-bottom: 60px;
+    }
+    .py-section{
+        padding: 60px 0;
+    }
+    .heading span{
+        font-size: 12px;
+    }
+    .heading h2 {
+        font-size: 28px;
+    }
+    .services{
+        scroll-margin-top: 60px;
+    }
+}
+@media screen and (max-width:480px) {
+    .customize-img::after{
+        width: 340px;
+        height: 340px;
+    }
+}
+@media screen and (max-width:410px) {
+    .heading h2 {
+        font-size: 26px;
+    }
+    .customize-img::after{
+        width: 260px;
+        height: 260px;
+    }
+}
+@media screen and (max-width:165px) {
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .progress {
+        display: none !important;
+    }
+}
+/******** end general style ********/
+
+
+
+
+
+
+
+    /* begin nav-bar style */
+    @media screen and (min-width:992px) and (max-width:1200px) {
+        .phone {
+            flex-grow: 1;
+        }
+        .phone span {
+            font-size: 13px !important;
+        }
+
+        .navbar .nav-item {
+            padding-right: 15px;
+        }
+        .dropdown {
+            padding-right: 15px;
+        }
+    }
+    @media screen and (max-width:991px) {
+        .navbar {
+            position: static;
+        }
+        .navbar .nav-item a {
+            padding-block: 10px;
+        }
+        .navbar .navbar-brand {
+            width: 160px !important;
+        }
+    }
+    @media screen and (max-width:576px) {
+        .offcanvas.offcanvas-end{
+            width: unset !important;
+            padding-left: 0px;
+        }
+    }
+    @media screen and (max-width:410px) {
+        .navbar .container {
+            padding-inline: 5px;
+        }
+        .navbar .navbar-toggler {
+            padding: 1px 5px;
+        }
+        
+        
+        .navbar .offcanvas-body {
+            padding-right: 10px !important;
+        }
+    }
+    @media screen and (max-width:300px) {
+        .navbar .offcanvas-header {
+            position: relative;
+            padding: 0;
+        }
+        .navbar .offcanvas-header .btn-close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .navbar .offcanvas-title {
+            display: none;
+            overflow: visible;
+        }
+    }
+
+    /* end header style */
+
