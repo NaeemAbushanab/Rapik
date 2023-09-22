@@ -160,6 +160,9 @@
 
 
 /******** begin services ********/
+.services {
+    overflow: hidden;
+}
 .services .heading{
     width: 60%;
     margin: unset;
