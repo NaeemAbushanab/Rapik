@@ -13,7 +13,10 @@ window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar");
 var header_contnet = document.getElementById('header-contnet');
 var header_offsetTop = header_contnet.offsetTop+100;
-var isEnter=false;
+var isEnterToSection={
+  'faq':false,
+  'services':false,
+};
 function myFunction() {
   if (window.scrollY >= 50 && window.matchMedia("(min-width: 992px)").matches) {
     navbar.classList.add('fixed-top')
@@ -39,26 +42,21 @@ function myFunction() {
     display: none;
     `
   }
-    var current = document.querySelectorAll('.navbar .active');
-    if(current.length>0 ){
-        if(current[0].classList.contains('dropdown-toggle')){
-            document.querySelector('.overview-btn').style.cssText=`
-            color: var(--main-color);
-            `
-        }
-        else{
-            document.querySelector('.overview-btn').style.cssText=`
-            color: black;
-            `
-        }
-        
-    }
-    
-
-    if(isEnter == false){
+  if(document.querySelector('.dropdown-toggle').classList.contains('active')){
+    document.querySelector('.overview-btn').style.cssText=`
+          color: var(--main-color);
+          `
+  }
+  else{
+      document.querySelector('.overview-btn').style.cssText=`
+      color: black;
+      `
+  }
+  var current = document.querySelectorAll('.navbar .active');
+    if(isEnterToSection['faq'] == false){
       if(current.length>0){
         if(current[0].innerHTML == 'Faq’s'){
-          isEnter=true;
+          isEnterToSection['faq']=true;
           var count_style = document.querySelectorAll('.count-style h4');
           var arr_count=[];
           for(var i=0;i<count_style.length;i++){
@@ -82,6 +80,33 @@ function myFunction() {
         }
       }
     }
+
+    if(isEnterToSection['services']==false){
+      if(current.length>0){
+        if(current[0].innerHTML == 'Services'){
+          isEnterToSection['services']=true;
+          var i = 100;
+          setInterval(function(){
+            if(i==-1){
+              clearInterval();
+            }
+            else{
+              document.querySelector('.server.three').style.cssText=`
+              opacity: ${1-(i/80)};
+              transform: translateX(-${i}%);
+              `;
+              document.querySelector('.server.one').style.cssText=`
+              opacity: ${1-(i/80)};
+              transform: translateX(${i}%);
+              `;
+              i--;
+            }
+          },20)
+        }
+      }
+
+    }
+
 }
 
 dropdown_item = document.querySelectorAll('.dropdown-item');
