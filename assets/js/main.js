@@ -158,9 +158,10 @@ for (var i = 0; i < dropdown_item.length; i++) {
     }
   });
 }
+let body2 = document.body
 document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
-    body.style.cssText = `
+    body2.style.cssText = `
           overflow:hidden;          
           `;
     document.querySelector(".cont-loader").style.cssText = `
@@ -175,7 +176,7 @@ document.onreadystatechange = function () {
     document.querySelector("#loader").style.cssText = `
             display: none;
             `;
-    document.querySelector("body").style.cssText = `
+            body2.style.cssText = `
           overflow:visible;
           
           `;
